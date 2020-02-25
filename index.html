@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,900,900i&display=swap" rel="stylesheet">
+    <title>Easy Coffee Ratios</title>
+</head>
+<body>
+    <div class="container">
+        
+        <nav>
+            <div class="logo">
+                <h2>GRAMS PER LITER</h2>
+            </div>
+        </nav>
+
+       
+
+        <div class="liters">
+         <div class="water" id="water">300</div>
+         <div class="li-text">milliliters of water</div>
+        </div>
+
+        <div class="liters">
+            <div class="water" id="coffee">18</div>
+            <div class="li-text">grams of coffee</div>
+        </div>
+
+        
+
+    <div class="cups">
+        
+        <div class="explainer">
+            How many cups of coffee are you brewing?
+        </div>
+        
+        <div class="volume">
+            <input type="button" id="1cup" name="ratio" value="1" Checked onClick="water('300');coffee('18')" autofocus>
+            <input type="button" id="2cup" name="ratio" value="2" onClick="water('600');coffee('36')">
+        </div>
+        <div class="volume">
+            <input type="button" id="3cup" name="ratio" value="3" onClick="water('900');coffee('54')">
+            <input type="button" id="4cup" name="ratio" value="4" onClick="water('1,200');coffee('72')">
+        </div>
+        
+        <div class="by-me">made with &lt;3 by <a href="https://dribbble.com/brandoneil">brandoneil</a></div>
+
+    </div>
+
+        
+</div>
+
+<script type="text/javascript">
+    function water(setting) {
+        myOption = setting;
+        document.getElementById("water").innerHTML = myOption;
+    }
+    function coffee(setting) {
+        myOption = setting;
+        document.getElementById("coffee").innerHTML = myOption;
+    }
+</script>
+
+</body>
+</html>
